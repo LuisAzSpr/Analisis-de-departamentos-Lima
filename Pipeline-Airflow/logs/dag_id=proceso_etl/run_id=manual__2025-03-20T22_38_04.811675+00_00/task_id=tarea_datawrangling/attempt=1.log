@@ -1,0 +1,64 @@
+[2025-03-20T17:38:47.502-0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-20T17:38:47.512-0500] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: proceso_etl.tarea_datawrangling manual__2025-03-20T22:38:04.811675+00:00 [queued]>
+[2025-03-20T17:38:47.517-0500] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: proceso_etl.tarea_datawrangling manual__2025-03-20T22:38:04.811675+00:00 [queued]>
+[2025-03-20T17:38:47.517-0500] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-20T17:38:47.534-0500] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): tarea_datawrangling> on 2025-03-20 22:38:04.811675+00:00
+[2025-03-20T17:38:47.541-0500] {standard_task_runner.py:72} INFO - Started process 240544 to run task
+[2025-03-20T17:38:47.543-0500] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'proceso_etl', 'tarea_datawrangling', 'manual__2025-03-20T22:38:04.811675+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmp6mgecrux']
+[2025-03-20T17:38:47.544-0500] {standard_task_runner.py:105} INFO - Job 14: Subtask tarea_datawrangling
+[2025-03-20T17:38:47.573-0500] {task_command.py:467} INFO - Running <TaskInstance: proceso_etl.tarea_datawrangling manual__2025-03-20T22:38:04.811675+00:00 [running]> on host luis-GF65
+[2025-03-20T17:38:47.626-0500] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='proceso_etl' AIRFLOW_CTX_TASK_ID='tarea_datawrangling' AIRFLOW_CTX_EXECUTION_DATE='2025-03-20T22:38:04.811675+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-20T22:38:04.811675+00:00'
+[2025-03-20T17:38:47.626-0500] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-20T17:39:04.407-0500] {data_wrangling.py:149} INFO - 1. Terminando formateo!!
+[2025-03-20T17:39:18.488-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:39:24.450-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:39:24.483-0500] {data_wrangling.py:186} ERROR - Los clasificados como 'venta' no son considerablemente más caros que los de alquiler. Verificar información
+[2025-03-20T17:39:24.483-0500] {data_wrangling.py:187} INFO - Los clasificados como 'venta' cuestan 1.0 veces más que los de alquiler
+[2025-03-20T17:39:24.485-0500] {data_wrangling.py:199} INFO - 2. Terminando clasificación de propiedades con data inconsistente!!
+[2025-03-20T17:40:08.121-0500] {data_wrangling.py:214} INFO - 3. Terminando obtención de dirección y precisión de coordenadas!!
+[2025-03-20T17:40:27.981-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:40:27.993-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:40:28.139-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:40:29.162-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:40:46.838-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:40:47.285-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:40:48.230-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:40:49.190-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:40:55.171-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:40:55.189-0500] {logging_mixin.py:190} WARNING - /home/luis/Proyectos/PrecioDeDepartamentos/Precios-depas-git/ProyectoDepas/2.0.StaggingLayer/StagingLayerProject/Pipeline/utils/general.py:23 SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2025-03-20T17:40:55.191-0500] {logging_mixin.py:190} INFO - El % de coincidencias para la columna 'area': 93.46% de 107
+[2025-03-20T17:40:55.193-0500] {logging_mixin.py:190} WARNING - /home/luis/Proyectos/PrecioDeDepartamentos/Precios-depas-git/ProyectoDepas/2.0.StaggingLayer/StagingLayerProject/Pipeline/utils/general.py:23 SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2025-03-20T17:40:55.195-0500] {logging_mixin.py:190} INFO - El % de coincidencias para la columna 'dormitorios': 99.32% de 147
+[2025-03-20T17:40:55.197-0500] {logging_mixin.py:190} WARNING - /home/luis/Proyectos/PrecioDeDepartamentos/Precios-depas-git/ProyectoDepas/2.0.StaggingLayer/StagingLayerProject/Pipeline/utils/general.py:23 SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2025-03-20T17:40:55.198-0500] {logging_mixin.py:190} INFO - El % de coincidencias para la columna 'banos': 81.43% de 140
+[2025-03-20T17:40:55.200-0500] {logging_mixin.py:190} WARNING - /home/luis/Proyectos/PrecioDeDepartamentos/Precios-depas-git/ProyectoDepas/2.0.StaggingLayer/StagingLayerProject/Pipeline/utils/general.py:23 SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2025-03-20T17:40:55.202-0500] {logging_mixin.py:190} INFO - El % de coincidencias para la columna 'antiguedad': 100.00% de 34
+[2025-03-20T17:40:55.202-0500] {data_wrangling.py:264} INFO - La variable area redujo 5 nulos
+[2025-03-20T17:40:55.203-0500] {data_wrangling.py:264} INFO - La variable dormitorios redujo 12 nulos
+[2025-03-20T17:40:55.204-0500] {data_wrangling.py:264} INFO - La variable banos redujo 8 nulos
+[2025-03-20T17:40:55.204-0500] {data_wrangling.py:264} INFO - La variable antiguedad redujo 0 nulos
+[2025-03-20T17:40:55.206-0500] {data_wrangling.py:273} INFO - 4. Terminando imputación de nulos de variables básicas con la descripción!!
+[2025-03-20T17:41:01.592-0500] {_client.py:1025} INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-03-20T17:41:03.226-0500] {data_wrangling.py:325} INFO - 5. Terminando imputación de nulos de coordenadas con la descripción!!
+[2025-03-20T17:41:05.939-0500] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-20T17:41:05.942-0500] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-20T17:41:05.943-0500] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=proceso_etl, task_id=tarea_datawrangling, run_id=manual__2025-03-20T22:38:04.811675+00:00, execution_date=20250320T223804, start_date=20250320T223847, end_date=20250320T224105
+[2025-03-20T17:41:06.020-0500] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-20T17:41:06.044-0500] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-20T17:41:06.057-0500] {local_task_job_runner.py:245} INFO - ::endgroup::

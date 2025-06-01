@@ -1,0 +1,15 @@
+[2025-03-20T16:11:52.701-0500] {processor.py:186} INFO - Started process (PID=172035) to work on /home/luis/Proyectos/PrecioDeDepartamentos/Precios-depas-git/ProyectoDepas/2.0.StaggingLayer/StagingLayerProject/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-03-20T16:11:52.702-0500] {processor.py:914} INFO - Processing file /home/luis/Proyectos/PrecioDeDepartamentos/Precios-depas-git/ProyectoDepas/2.0.StaggingLayer/StagingLayerProject/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-03-20T16:11:52.703-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.703-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/luis/Proyectos/PrecioDeDepartamentos/Precios-depas-git/ProyectoDepas/2.0.StaggingLayer/StagingLayerProject/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-03-20T16:11:52.708-0500] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /home/luis/Proyectos/PrecioDeDepartamentos/Precios-depas-git/ProyectoDepas/2.0.StaggingLayer/StagingLayerProject/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-03-20T16:11:52.824-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.823-0500] {override.py:1930} INFO - Created Permission View: can edit on DAG:tutorial
+[2025-03-20T16:11:52.839-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.838-0500] {override.py:1930} INFO - Created Permission View: can read on DAG:tutorial
+[2025-03-20T16:11:52.852-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.852-0500] {override.py:1930} INFO - Created Permission View: can delete on DAG:tutorial
+[2025-03-20T16:11:52.880-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.880-0500] {override.py:1930} INFO - Created Permission View: can read on DAG Run:tutorial
+[2025-03-20T16:11:52.893-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.893-0500] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:tutorial
+[2025-03-20T16:11:52.906-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.906-0500] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:tutorial
+[2025-03-20T16:11:52.920-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.919-0500] {override.py:1930} INFO - Created Permission View: can create on DAG Run:tutorial
+[2025-03-20T16:11:52.920-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.920-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-20T16:11:52.928-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.928-0500] {dag.py:3262} INFO - Creating ORM DAG for tutorial
+[2025-03-20T16:11:52.933-0500] {logging_mixin.py:190} INFO - [2025-03-20T16:11:52.933-0500] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-03-19 00:00:00+00:00, run_after=2025-03-20 00:00:00+00:00
+[2025-03-20T16:11:52.954-0500] {processor.py:208} INFO - Processing /home/luis/Proyectos/PrecioDeDepartamentos/Precios-depas-git/ProyectoDepas/2.0.StaggingLayer/StagingLayerProject/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.257 seconds
