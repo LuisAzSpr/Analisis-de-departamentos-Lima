@@ -2,11 +2,19 @@
 
 **Autor : Luis Angel Azaña Vega**
 
-
 -> Report en Looker Studio : 
 **https://goo.su/UeE4rZT**
 
-Un análisis de los departamentos en alquiler en Lima de Febrero y Marzo.
+## Problematica
+
+En los últimos años, el acceso a una vivienda en alquiler a un precio justo se ha vuelto una tarea cada vez más difícil para los ciudadanos de Lima, sobre todo en distritos céntricos. A pesar de los ingresos medios de la población, que rondan los 2,000 nuevos soles mensuales, los precios de alquiler presentan una tendencia inflacionaria, especialmente en distritos de clase alta. Esta situación se ve agravada por la desinformación de muchos jóvenes limeños, quienes suelen subestimar el costo real de alquilar un departamento en zonas céntricas y de alta demanda. Esta combinación de ingresos limitados, alzas sostenidas en los precios y desconocimiento del mercado implica que una gran parte de la población enfrente una toma de decisión compleja, entre optar por distritos periféricos o destinar una proporción desproporcionada de sus ingresos al alquiler, comprometiendo así su estabilidad económica.
+
+## Objetivo
+
+El presente proyecto tiene como objetivo principal analizar el mercado de departamentos en alquiler en Lima, con el propósito de proporcionar información clara, visual e interpretativa que permita al ciudadano comprender qué factores influyen en el precio. Mediante un reporte interactivo en Looker Studio, se busca facilitar la comparación entre zonas y distritos, evaluar la relación entre las características del inmueble (como área, número de dormitorios, baños y ubicación) y el costo del alquiler. Esta herramienta tiene como fin apoyar a los usuarios en la toma de decisiones informadas.
+
+
+## Proceso
 
 El proyecto consta de 3 etapas principales :
 
