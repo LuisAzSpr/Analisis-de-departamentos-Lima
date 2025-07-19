@@ -1,12 +1,11 @@
-import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from collections import Counter
+import nltk
 
 # Descargar recursos necesarios de NLTK
 nltk.download('punkt')
 nltk.download('stopwords')
-
 
 def obtener_frecuencias(textos, n=10, idioma='spanish'):
     """
@@ -33,9 +32,6 @@ def obtener_frecuencias(textos, n=10, idioma='spanish'):
     # Retornamos las n palabras más frecuentes
     return frecuencias.most_common(n)
 
-
 def diferencias(frecuencias1, frecuencias2):
     return set(dict(frecuencias1).keys()) - set(dict(frecuencias2).keys())
-
-
 
